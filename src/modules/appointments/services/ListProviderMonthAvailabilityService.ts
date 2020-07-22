@@ -1,5 +1,5 @@
 import { injectable, inject } from 'tsyringe';
-import { getDaysInMonth, getDate, eachDayOfInterval } from 'date-fns';
+import { getDaysInMonth, getDate } from 'date-fns';
 
 // import User from '@modules/users/infra/typeorm/entities/User';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
