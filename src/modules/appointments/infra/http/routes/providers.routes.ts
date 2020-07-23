@@ -6,6 +6,7 @@ import ProviderDayAvailabilityController from '../controllers/ProviderDayAvailab
 import ProviderMonthAvailabilityController from '../controllers/ProviderMonthAvailabilityController';
 
 const providersRouter = Router();
+
 const providersController = new ProvidersController();
 const providerDayAvailabilityController = new ProviderDayAvailabilityController();
 const providerMonthAvailabilityController = new ProviderMonthAvailabilityController();
@@ -13,6 +14,7 @@ const providerMonthAvailabilityController = new ProviderMonthAvailabilityControl
 providersRouter.use(ensureAuthenticated);
 
 providersRouter.get('/', providersController.index);
+
 providersRouter.get(
   '/:provider_id/day-availability',
   providerDayAvailabilityController.index,
